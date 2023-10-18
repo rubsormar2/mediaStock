@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_product_sales_analysis_form">
+            <field name="name">product.sales.analysis.form</field>
+            <field name="model">product.sales.analysis</field>
+            <field name="arch" type="xml">
+                <form string="Product Sales Analysis">
+                    <group>
+                        <field name="start_date" required="1"/>
+                        <field name="end_date" required="1"/>
+                    </group>
+                    <footer>
+                        <button name="calculate_daily_sales" string="Calcular" type="object" class="btn-primary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
